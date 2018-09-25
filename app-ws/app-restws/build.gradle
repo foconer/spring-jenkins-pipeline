@@ -1,0 +1,14 @@
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    baseName = 'app-restws'
+    version =  '0.0.1-SNAPSHOT'
+}
+
+configurations {
+    providedRuntime
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+}
