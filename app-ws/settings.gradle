@@ -1,3 +1,0 @@
-rootProject.name = 'app-restws'
-include ':app-restws'
-include ':app-restws-integration'
