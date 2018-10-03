@@ -1,4 +1,5 @@
 node {
+
   stage 'checkout'
   git 'https://github.com/foconer/spring-jenkins-pipeline.git'
 
@@ -6,4 +7,5 @@ node {
      stage 'build'
      sh './gradlew clean build'
   }
+
 }
