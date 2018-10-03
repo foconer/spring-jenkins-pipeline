@@ -1,3 +1,3 @@
-def call(repositoryUrl) {
-  git repositoryUrl
+def call(repo) {
+  git repo
 }
