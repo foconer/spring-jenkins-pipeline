@@ -1,0 +1,9 @@
+node {
+  stage 'checkout'
+  git 'https://github.com/foconer/spring-jenkins-pipeline.git'
+
+  dir('app-restws') {
+     stage 'build'
+     sh './gradlew clean build'
+  }   
+}
