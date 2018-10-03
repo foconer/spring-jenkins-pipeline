@@ -30,6 +30,7 @@ Body: {
   }
 }
 
+
 # MailHog (Intercepts emails)
 http://localhost:8025/
 
