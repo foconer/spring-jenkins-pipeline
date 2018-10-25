@@ -2,11 +2,11 @@ pipeline {
   agent any
   
   stages {
-      stage('checkout') {
-          steps {
-              git 'https://github.com/foconer/spring-jenkins-pipeline.git'
-          }
-      }
+      //stage('checkout') {
+      //    steps {
+      //        git 'https://github.com/foconer/spring-jenkins-pipeline.git'
+      //    }
+      //}
       
       stage('build') {
           steps {
