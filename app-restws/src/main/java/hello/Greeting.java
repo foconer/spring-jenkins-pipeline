@@ -1,9 +1,17 @@
 package hello;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize
 public class Greeting {
 
-    private final long id;
-    private final String content;
+    private long id;
+    private String content;
+
+    public Greeting() {
+        id = 1;
+        content = "Hello Default";
+    }
 
     public Greeting(long id, String content) {
         this.id = id;
@@ -16,5 +24,13 @@ public class Greeting {
 
     public String getContent() {
         return content;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
